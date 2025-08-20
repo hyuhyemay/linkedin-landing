@@ -1,45 +1,35 @@
-linkedin-landing
-Project ini merupakan landing page sederhana untuk mempromosikan kelas online “Mastering LinkedIn for Career Growth”. Website dibuat agar terlihat clean, responsif, dan mudah dipahami pengguna, sekaligus memenuhi kebutuhan case assessment Web Developer.
+Linkedin-Landing
 
-Tools dan Teknologi
+🌐 Project ini adalah landing page sederhana untuk mempromosikan kelas online “Mastering LinkedIn for Career Growth”.
+Website dibuat clean, responsif, dan mudah dipahami pengguna, sekaligus memenuhi kebutuhan case assessment Web Developer.
 
-HTML untuk struktur halaman
+🎨 Desain menggunakan Flexbox dan Grid untuk layout, serta JavaScript untuk interaktivitas ringan. Project ini di-deploy agar bisa diakses secara online sehingga mudah untuk didemokan.
 
-CSS (Flexbox & Grid) untuk styling dan layout responsive
+Tools dan Teknologi:
+📝 HTML untuk struktur halaman
+🎨 CSS (Flexbox & Grid) untuk styling dan layout responsif
+⚡ JavaScript untuk interaktivitas sederhana (animasi ringan, toggle, dsb)
+💾 GitHub untuk version control dan repository
+🚀 Vercel untuk hosting dan live demo
 
-JavaScript untuk interaktivitas sederhana (hover effect, animasi ringan)
+Cara Menjalankan Project:
 
-GitHub untuk version control dan repository
-
-Vercel / Netlify untuk hosting demo live
-
-Cara Menjalankan Project
-
-Clone repository ke komputer:
+Clone repository ke komputer
 git clone https://github.com/username/linkedin-landing.git
 
-Masuk ke folder project:
+Masuk ke folder project
 cd linkedin-landing
 
-Buka file index.html langsung di browser untuk melihat tampilan landing page.
-Tidak perlu instalasi tambahan.
+Buka file index.html di browser
+Tidak diperlukan instalasi tambahan
 
-Live Demo
-Website ini juga dideploy agar bisa diakses langsung secara online:
-https://linkedin-landing.vercel.app
+Fitur Utama:
+🎯 Hero section berisi judul kelas, subjudul singkat, dan tombol CTA “Daftar Sekarang”
+📖 About section dengan deskripsi kelas
+✅ Key Benefits menampilkan 3–4 manfaat utama
+💬 Testimonials sebagai slot feedback alumni
+📌 Call-to-Action terakhir untuk pendaftaran
+📱 Desain minimalis, bersih, dan sudah mobile responsive
 
-(silakan ganti dengan link live deploy dari akun Vercel/Netlify kamu)
-
-Fitur Utama
-
-Hero section berisi judul kelas, subjudul singkat, dan tombol CTA “Daftar Sekarang”.
-
-About section dengan deskripsi kelas (100–150 kata).
-
-Bagian Key Benefits menampilkan 3–4 manfaat utama dari kelas.
-
-Placeholder Testimonial sebagai slot feedback alumni.
-
-Call-to-Action terakhir untuk mendorong pendaftaran.
-
-Desain minimalis, bersih, dan sudah mobile responsive.
+Live Demo:
+👉 https://linkedin-landing.vercel.app
