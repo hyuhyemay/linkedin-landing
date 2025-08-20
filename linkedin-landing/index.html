@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mastering LinkedIn — Online Class</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div id="scrollProgress" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero">Belajar LinkedIn</a>
+      <nav class="nav" aria-label="Navigasi utama">
+        <a href="#about">Tentang</a>
+        <a href="#benefits">Manfaat</a>
+        <a href="#testimonials">Testimoni</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-primary btn-sm" href="#register">Daftar</a>
+      </nav>
+      <button id="themeToggle" class="btn btn-ghost btn-sm" aria-pressed="false" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="hero" class="section hero" data-animate aria-label="Pengantar kelas">
+      <div class="blob" aria-hidden="true"></div>
+      <div class="container grid-2">
+        <div>
+          <span class="pill">Online Class</span>
+          <h1 class="hero-title">Mastering LinkedIn for Career Growth</h1>
+          <p class="hero-sub">
+            Optimasi profil, strategi konten, dan networking efektif—praktis, jelas, dan langsung bisa dipakai.
+          </p>
+
+          <!-- quick bullets -->
+          <ul class="hero-checks">
+            <li><span class="check"></span> Profil dilirik perekrut</li>
+            <li><span class="check"></span> Konten konsisten & rapi</li>
+            <li><span class="check"></span> Networking sopan & efektif</li>
+          </ul>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary btn-xl btn-shimmer pulse" href="#register">Daftar Sekarang</a>
+            <a class="btn btn-outline btn-xl" href="#benefits">Lihat Manfaat</a>
+          </div>
+
+          <!-- social proof -->
+          <div class="hero-social">
+            <div class="avatar-stack">
+              <img src="assets/dina.jpg" alt="" data-name="Dina">
+              <img src="assets/rangga.jpg" alt="" data-name="Rangga">
+              <img src="assets/sari.jpg" alt="" data-name="Sari">
+              <img src="assets/bima.jpg" alt="" data-name="Bima">
+              <img src="assets/lia.jpg" alt="" data-name="Lia">
+            </div>
+            <div class="rating">⭐️⭐️⭐️⭐️⭐️ 4.9/5 (1.2k+ alumni)</div>
+          </div>
+
+          <!-- countdown + video -->
+          <div class="hero-meta2">
+            <button id="videoOpen" class="btn btn-ghost btn-sm video-btn">▶️ Lihat cuplikan 60 detik</button>
+            <span class="dot">•</span>
+            <span id="countdown">–</span>
+            <span class="dot">•</span>
+            Kursi tersisa: <strong id="seatsLeft">12</strong>
+          </div>
+
+          <p class="hero-meta">Batch berikutnya: <strong>31 Agustus 2025</strong> · <span class="badge">Live via Zoom</span> <span class="badge">Sertifikat</span></p>
+        </div>
+
+        <!-- Kanan -->
+        <div class="hero-card" aria-hidden="true">
+          <div class="hero-illustration">
+            <div class="chart">📈</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="section logos" aria-label="Dipercaya oleh">
+      <div class="container center">
+        <p class="muted small">Dipakai oleh alumni dari</p>
+        <div class="logo-row">
+          <span>Tokopedia</span><span>Gojek</span><span>Traveloka</span><span>Telkom</span><span>BNI</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats (animated counters) -->
+    <section class="section" data-animate aria-label="Statistik Alumni">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="stat-icon">👥</div>
+            <div>
+              <div class="num" data-target="1200">0</div>
+              <div class="label">Alumni berpengalaman</div>
+            </div>
+          </div>
+          <div class="stat">
+            <div class="stat-icon">💬</div>
+            <div>
+              <div class="num" data-target="860">0</div>
+              <div class="label">DM peluang terkirim</div>
+            </div>
+          </div>
+          <div class="stat">
+            <div class="stat-icon">📈</div>
+            <div>
+              <div class="num" data-target="128">0</div>
+              <div class="label">Rata-rata kenaikan views (%)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section" data-animate aria-label="Tentang kelas">
+      <div class="container narrow">
+        <h2 class="section-title">Tentang Kelas</h2>
+        <p>
+          Kelas ini membantu kamu membangun <em>personal branding</em>, memperluas jaringan, dan membuka peluang karier di LinkedIn.
+          Kamu akan praktik langsung mengoptimalkan profil, membuat konten konsisten, dan melakukan outreach yang sopan & efektif.
+        </p>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits" class="section alt" data-animate aria-label="Manfaat Utama">
+      <div class="container">
+        <h2 class="section-title">Manfaat Utama</h2>
+        <div class="benefit-grid">
+          <article class="card lift" data-animate>
+            <div class="icon wobble">💼</div>
+            <h3>Profil Profesional</h3>
+            <p>Headline, summary, dan pengalaman yang menarik perekrut.</p>
+          </article>
+          <article class="card lift" data-animate>
+            <div class="icon wobble">✨</div>
+            <h3>Personal Branding</h3>
+            <p>Bangun positioning dengan konten yang konsisten & bernilai.</p>
+          </article>
+          <article class="card lift" data-animate>
+            <div class="icon wobble">🤝</div>
+            <h3>Networking</h3>
+            <p>Taktik outreach sopan, efektif, dan beretika.</p>
+          </article>
+          <article class="card lift" data-animate>
+            <div class="icon wobble">🚀</div>
+            <h3>Peluang Karier</h3>
+            <p>Manfaatkan fitur LinkedIn untuk akses lowongan & klien.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials (pakai punyamu) -->
+    <section id="testimonials" class="section" data-animate aria-label="Testimoni">
+      <div class="container">
+        <h2 class="section-title">Apa Kata Alumni?</h2>
+
+        <div class="testimonial-grid">
+          <div class="testimonial card" data-animate>
+            <img class="avatar" src="assets/emma w.jpg" alt="" data-name="Emma Watson">
+            <div class="text">
+              <blockquote>“Dulu saya cuman bisa acting, sekarang bisa merangkap sebagai Product Designer. Makasi ya Belajar LinkedIn.”</blockquote>
+              <p class="author">— Emma Watson, Product Designer</p>
+            </div>
+          </div>
+
+          <div class="testimonial card" data-animate>
+            <img class="avatar" src="assets/thomas.jpg" alt="" data-name="Thomas Sangster">
+            <div class="text">
+              <blockquote>“Karena saya sibuk shooting, sekarang udah ngerasa pantes jadi budak coorporate. TYSM Belajar LinkedIn”</blockquote>
+              <p class="author">— Thomas Sangster, Fresh Graduate</p>
+            </div>
+          </div>
+
+          <div class="testimonial card" data-animate>
+            <img class="avatar" src="assets/daniel.jpg" alt="" data-name="Daniel Radcliffe">
+            <div class="text">
+              <blockquote>“Gara-gara Belajar LinkedIn dapat interview <em>remote</em> dari luar negeri (Hogwarts) dalam 2 minggu.”</blockquote>
+              <p class="author">— Daniel Radcliffe, Marketing</p>
+            </div>
+          </div>
+
+          <div class="testimonial card" data-animate>
+            <img class="avatar" src="assets/heiji.jpg" alt="" data-name="Heiji Hattori">
+            <div class="text">
+              <blockquote>“Headline & summary makin rapi jadi ga berantakan lagi kayak omongan saya yang suka blubuk2 ke Kazuha. View profil naik 3x. Arigatou Belajar LinkedIn.”</blockquote>
+              <p class="author">— Heiji Hattori, Web Developer</p>
+            </div>
+          </div>
+
+          <div class="testimonial card" data-animate>
+            <img class="avatar" src="assets/ecan.jpg" alt="" data-name="Lee Donghyuck">
+            <div class="text">
+              <blockquote>“Saya berterima kasih ke Belajar LinkedIn karena saya mulai dapat project freelance dari koneksi LinkedIn. Lumayan ya freelance selain jadi idol.”</blockquote>
+              <p class="author">— Donghyuck Lee, UI/UX Designer</p>
+            </div>
+          </div>
+
+          <div class="testimonial card" data-animate>
+            <img class="avatar" src="assets/marekeu.jpg" alt="" data-name="Mark Lee">
+            <div class="text">
+              <blockquote>“Template kontennya ngebantu konsisten upload tiap minggu. Makasi ya Belajar LinkedIn karena kamu aku jadi siap nambah kerjaan jadi Budak Coorporate.”</blockquote>
+              <p class="author">— Mark Lee, Marketer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section alt" data-animate aria-label="Pertanyaan Umum">
+      <div class="container narrow">
+        <h2 class="section-title">Pertanyaan Umum</h2>
+        <div class="accordion">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Untuk siapa kelas ini?</span><span class="indicator">+</span>
+          </button>
+          <div class="accordion-panel"><p>Mahasiswa, fresh graduate, dan profesional.</p></div>
+
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Apakah ada rekaman?</span><span class="indicator">+</span>
+          </button>
+          <div class="accordion-panel"><p>Iya, rekaman & materi ringkas disediakan.</p></div>
+
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Butuh pengalaman sebelumnya?</span><span class="indicator">+</span>
+          </button>
+          <div class="accordion-panel"><p>Tidak. Materi mulai dari dasar sampai menengah.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- ADD-ONS: Resources grid   -->
+    <!-- ========================= -->
+    <section id="resources" class="section alt" data-animate aria-label="Persiapan Karier">
+      <div class="container">
+        <h2 class="section-title">Persiapan Karier</h2>
+        <div class="x-res-grid">
+          <article class="card lift x-res-card">
+            <img src="assets/checklist.png" alt="" class="x-res-img">
+            <h3 class="x-res-title">Checklist Optimasi Profil</h3>
+            <p>Langkah praktis dari foto, headline, sampai keywords.</p>
+            <a class="btn btn-outline btn-sm" href="assets/checklist-profil.pdf" download>Unduh PDF</a>
+          </article>
+
+          <article class="card lift x-res-card">
+            <img src="assets/template.png" alt="" class="x-res-img">
+            <h3 class="x-res-title">Template Konten 30 Hari</h3>
+            <p>Ide konten mingguan biar konsisten.</p>
+            <a class="btn btn-outline btn-sm" href="assets/template-konten.xlsx" download>Unduh XLSX</a>
+          </article>
+
+          <article class="card lift x-res-card">
+            <img src="assets/video.png" alt="" class="x-res-img">
+            <h3 class="x-res-title">Video: Cara DM Perekrut</h3>
+            <p>Struktur pesan, etika, & follow-up sopan.</p>
+            <button class="btn btn-primary btn-sm" data-video="https://www.youtube-nocookie.com/embed/5qap5aO4i9A?autoplay=1&mute=1">Tonton</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="register" class="section cta" data-animate aria-label="Pendaftaran">
+      <div class="container narrow center">
+        <h2 class="section-title">Siap Tingkatkan Kariermu?</h2>
+        <p class="lead">Gabung sekarang dan pelajari strategi LinkedIn yang terbukti efektif.</p>
+        <div class="cta-actions">
+          <a class="btn btn-primary btn-xl btn-shimmer pulse" href="#faq">Daftar Sekarang</a>
+          <a class="btn btn-outline btn-xl" href="#benefits">Lihat Manfaat</a>
+        </div>
+        <p class="note">Bonus: Template headline & checklist optimasi profil</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky CTA (muncul di mobile, style sudah ada di CSS kamu) -->
+  <a href="#register" class="sticky-cta" aria-label="Daftar sekarang">🚀 Daftar Batch 31 Agustus</a>
+
+  <!-- Wave divider -->
+  <div class="wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path d="M0,64 C240,96 480,32 720,48 C960,64 1200,112 1440,80 L1440,120 L0,120Z"></path>
+    </svg>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Belajar LinkedIn · All rights reserved.</p>
+      <nav class="foot-nav">
+        <a href="#about">Tentang</a>
+        <a href="#benefits">Manfaat</a>
+        <a href="#register">Daftar</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Video Modal -->
+  <div id="videoModal" class="video-modal" aria-hidden="true">
+    <div class="video-backdrop" id="videoClose"></div>
+    <div class="video-box" role="dialog" aria-modal="true" aria-label="Cuplikan kelas">
+      <button class="video-x" id="videoCloseBtn" aria-label="Tutup">✕</button>
+      <iframe id="videoFrame" width="560" height="315"
+        src="" title="Cuplikan kelas" frameborder="0"
+        allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <!-- ========================= -->
+  <!-- ADD-ONS: Feedback widget  -->
+  <!-- ========================= -->
+  <button id="xFeedbackFab" class="x-fab" aria-haspopup="dialog" aria-controls="xFeedbackPanel">💬 Feedback</button>
+  <div id="xFeedbackPanel" class="x-panel" aria-hidden="true" role="dialog" aria-label="Kirim feedback">
+    <div class="x-head">
+      <strong>Kirim Feedback</strong>
+      <button id="xFbClose" class="x-x" aria-label="Tutup">✕</button>
+    </div>
+    <form id="xFbForm" class="x-form">
+      <textarea id="xFbMsg" rows="3" placeholder="Tulis feedbackmu…"></textarea>
+      <button class="btn btn-primary btn-sm" type="submit">Kirim</button>
+    </form>
+    <p id="xFbThanks" class="x-thanks" hidden>Makasih! Feedback tercatat ✨</p>
+  </div>
+</body>
+</html>
